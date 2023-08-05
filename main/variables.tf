@@ -1,6 +1,6 @@
 variable "rg_name" {
   description = "The Azure Region where the Resource Group should exist. Changing this forces a new Resource Group to be created."  
-  default = "techslate-ade-rg307"
+  default = "techslate-ade-rg3071"
 }
 
 variable "location" {
@@ -10,36 +10,19 @@ variable "location" {
 
 variable "asp_name" {
   description = ""
-  default = "techslate-asp-307"
+  default = "techslate-asp-3071"
 }
 
 variable "webapp_name" {
   description = ""
-  default = "techslate-webapp-307"
+  default = "techslate-webapp-3071"
 }
 
 variable "docker_image" {
-  default = "DOCKER|sonarqube:latest"
+  default = "sonarqube:latest"
 }
 
 variable "container_name" {
-  default = "container-ts-307"
+  default = "container-ts-3071"
   description = ""
-}
-
-variable "database_name" {
-  default = "database-ts-307"
-  description = ""
-}
-
-variable "db_firewall_rule_name" {
-  default = "firewall-ts-307"
-  description = ""
-}
-
-variable "db_server_name" {
-  description = "Name of the PostgreSQL server"
-  default     = "ts-db-server-307"
-
-  
 }
